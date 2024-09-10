@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(60,137,138,1) 13%, rgba(108,32,109,0.4) 37%, rgba(109,33,32,0.4) 98%);
+animation: gradient 15s ease infinite;
+}
+
+.main{
+
+    width: 60%;
+    background-image: url(https://img.freepik.com/free-photo/portrait-young-student-education-day_23-2150980073.jpg?t=st=1725566273~exp=1725569873~hmac=c73607d933165f3665a3bd174522034064d02ef813b2e5735b3042dd530a0543&w=826);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    animation: changeImage 50s linear infinite;
+}
+
+
+@keyframes changeImage{
+0%{
+    background-image: url(https://img.freepik.com/free-photo/portrait-young-student-education-day_23-2150980073.jpg?t=st=1725566273~exp=1725569873~hmac=c73607d933165f3665a3bd174522034064d02ef813b2e5735b3042dd530a0543&w=826);
+ 
+}
+20%{
+    background-image: url(images/img1.jpg);
+    
+}
+
+40%{
+    background-image: url(images/img2.jpg);
+
+}
+50%{
+    background-image: url(images/img3.jpg);
+
+}
+70%{
+    background-image: url(images/img4.jpg);
+}
+
+80%{
+background-image: url(images/img5.jpg);
+}
+
+90%{
+background-image: url(images/img6.jpg);
+}
+
+100%{
+background-image: url(images/img7.jpg);
+
+}
+}
+
+nav{
+width: 100%;
+    height: 80px;
+}
+
+
+.logo{
+line-height: 80px;
+margin: 20px;
+width: 110px;
+
+}
+
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a{
+color: white;
+font-size: 15px;
+padding: 10px 30px;
+transition: 0.4s ease-in-out;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+
+.btn{
+    margin-right: 20px;
+    padding: 0 10px;
+    color: white;
+    background-color: rgb(143, 96, 187);
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 15px;
+    border: 3px solid rgb(143, 96, 187);
+    cursor: pointer;
+}
+
+
+ul i{
+background-color: white;
+border: 1px solid black;
+padding: 2px;
+border-radius: 30px;
+margin-left: 5px;
+color: rgb(143, 96, 187);
+}
+
+.dropbtn{
+margin-left: 30px;
+padding: 5px;
+color: white;
+background-color:#9A54D6;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;  
+font-size: 15px;
+cursor: pointer;
+} 
+
+#checkbtn{
+float: right;
+line-height: 80px;
+font-size: 30px;
+color: black;
+margin-right: 20px;
+display: none;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked~ul{
+    left: 0;
+}
+
+/*media query for mobiles*/
+@media (max-width: 480px){
+
+.logo{
+    width: 80px;
+    margin-right: 0 5vh;
+}
+}
+
+/*media query for desktops*/
+@media (max-width: 895px){
+
+.logo{
+    margin-right: 0 70px;
+}
+
+#checkbtn{
+    display: block;
+}
+
+nav ul{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+}
+
+nav ul li{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 15px;
+}
+}
+/*Nav media query ended*/
+h1{
+    margin: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+.content p{
+margin: 30px;
+font-size: 12px;
+color: white;
+}
+
+.search{
+    width: 330px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.btn1{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    margin-left:  30px;
+    background-color: #9A54D6;
+    border: 1px solid white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+.btn2{
+    width: 200px;
+    height: 50px;
+    background-color: #9A54D6;
+    border: 1px solid white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: white;
+    font-size: 15px;
+}
+
+.btn3{
+    background-color: #9A54D6;
+    color: white;
+    width:  40px;
+    height: 40px;
+    border: 1px soild white;
+    border-radius: 50px;
+    margin-left: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h6{
+    float: right;
+    position: relative;
+    bottom:  30px;
+    left: 10px;
+    color: white;
+    font-size: 9px;
+}
+
+.search i{
+width: 20px;
+}
+
+.footer p{
+margin-top: 50px;
+    font-size: 8px;
+    position: relative;
+    top: 50px;
+}
+
+.footer img{
+    width: 20px;
+    margin-top:  30px;
+    margin-left: 30px;
+}
+
+.audio{
+    margin-top: 40px;
+    background-color: #9A54D6;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border: 2px solid white;
+
+}
+
+@media (max-width: 480px){
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+  
+.content h1{
+    font-size: 20px;
+    color: blue;
+}
+
+.content p{
+    font-size: 8px;
+    color: red;
+}
+
+.footer p{
+    margin-top: 150px;
+    color: purple;
+}
+
+.footer img{
+    margin-top: 50px;
+}
+
+.btn1{
+width: 60px;
+height: 30px;
+font-size: 10px;
+}
+
+.btn2{
+width: 110px; 
+height: 30px; 
+font-size: 10px;
+}
+.btn3{
+width: 30px;
+height: 30px;
+}
+}
+
+@media (max-width: 895px){
+.main{
+width: 100%;
+height: 100vh;
+background-size: 100% 100%;
+}
+h1{
+    font-size: 35px;
+    color:green;
+}
+
+.content p{
+font-size: 10px;
+}
+
+.btn1{
+width: 70px;
+height: 40px;
+font-size: 12px;
+}
+
+.btn2{
+    width: 120px; 
+    height: 40px; 
+    font-size: 10px;
+      
+}
+
+.btn3{
+    width: 35px;
+    height: 35px;
+     
+}
+
+h6{
+ margin-top: 45px;  
+margin-right: 80px ;
+}
+
+.footer p{
+font-size: 8px;
+margin-top: 100px;
+}
+
+
+
+}
